@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokémon.gg - Pokemon Trading Cards</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/snorlax_icon-icons.com_67505.ico">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav__container">
+            <a href="index.html">
+                <img class="logo" src="assets/image-removebg-preview (14).png" alt="">
+            </a>
+            <ul class="nav__links">
+                <li><a class="nav__link" href="index.html">Home</a></li>
+                <li><a class="nav__link no-cursor" href="#">Discover</a></li>
+                <li><a class="nav__link no-cursor" href="#">Contact</a></li>
+            </ul>
+            <button class="btn-menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu-backdrop">
+            <button class="btn-menu btn-menu-close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu-links">
+                <li class="menu-list"><a class="menu-link link__hover-effect link__hover-effect--black" href="index.html" onclick="closeMenu()">Home</a></li>
+                <li class="menu-list"><a class="menu-link no-cursor" href="#features" onclick="closeMenu()">Discover</a></li>
+                <li class="menu-list"><a class="menu-link no-cursor" href="#" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="landing__container">
+                    <div class="search__container">
+                        <p class="search__title">
+                            Search for another Pokemon!
+                        </p>
+                        <input id="search__input" class="search__input" type="text" placeholder="Cyndaquil, Pikachu, Piplup, Treecko, etc.." onkeypress="return searchKeyPress(event)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="pokemon_page">
+        <div class="container">
+            <div class="row">
+                <div class="results">
+                    <h2 class="result"></h2>
+                </div>
+                <div class="pokemons"></div>
+                <div class="pokemons__info"></div>       
+                <div class="photo__container">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="pokemon.js"></script>
+<script src="index.js"></script>
+</html>
