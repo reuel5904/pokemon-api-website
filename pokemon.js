@@ -117,7 +117,7 @@ function postHTML(pokemon) {
 
             : `<h5 class="pokemon__info--attack"></h5>`}  
 
-            ${Object.keys(pokemon).includes('prices') ? `<h2 class="pokemon__info--price">Price: $${pokemon.cardmarket.prices.trendPrice} </h2>` : `<h2 class="pokemon__info--price highlight-text">No Price Available for this Card</h2>`}
+            ${Object.keys(pokemon).includes('cardmarket') ? `<h2 class="pokemon__info--price">Price: $${pokemon.cardmarket.prices.trendPrice} </h2>` : `<h2 class="pokemon__info--price highlight-text">No Price Available for this Card</h2>`}
         </div>
     </div>
 </div>`
